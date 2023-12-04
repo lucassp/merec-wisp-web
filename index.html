@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Helvetica Neue", Helvetica'],
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="mx-[15px] pt-[20px] space-y-8">
+    <header class="flex justify-between">
+      <div class="">
+        <h1 class="text-3xl">MEREC-WISP</h1>
+        <span id="subtitle" class="translate"
+          >A Multiple Criteria Decision Making Support Website</span
+        >
+      </div>
+      <select
+        id="languageSelector"
+        class="p-2 border border-gray-300 rounded bg-white focus:border-gray-300 ring:border-gray-300 w-[300px]"
+      >
+        <option id="englishOption" value="en" class="p-2" selected>
+          English
+        </option>
+        <option id="portugueseOption" class="p-2" value="pt-BR">
+          Português
+        </option>
+      </select>
+    </header>
+
+    <main>
+      <section>
+        <p id="description" class="translate">
+          This website offers a versatile calculator accommodating the MEREC
+          (MEthod based on the Removal Effects of Criteria) objective weight
+          method and the WISP (Weighted Sum Product Method) ranking method.
+          These tools are designed to address the challenges presented by
+          Multiple Criteria Decision Making problems. Whether you prefer to use
+          each method individually or in combination as a hybrid approach, you
+          can effortlessly leverage the calculator. Simply input your problem
+          data, including alternatives, criteria, Cost-Benefit indicators, and
+          their corresponding values, using the provided CSV examples.
+        </p>
+      </section>
+
+      <section class="mt-4">
+        <div
+          class="grid lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-1 md:grid-rows-3 gap-4"
+        >
+          <a
+            href="https://lucas-ime.shinyapps.io/rmerecweb/"
+            class="border border-gray-300 rounded p-4 hover:bg-gray-200 hover:shadow"
+          >
+            <span id="merecTitle" class="translate text-xl block mb-2"
+              >MEREC Calculator</span
+            >
+            <p id="merecDescription" class="translate">
+              Obtain the MEREC´s objetive weights for a given decision matrix.
+            </p>
+          </a>
+
+          <a
+            href="https://bernardosilva.shinyapps.io/rwisp/"
+            class="border border-gray-300 rounded p-4 hover:bg-gray-200 hover:shadow"
+          >
+            <span id="wispTitle" class="translate text-xl block mb-2"
+              >WISP Calculator</span
+            >
+            <p id="wispDescription" class="translate">
+              Solve a MCDM problem using the WISP method by providing a decision
+              matrix and the criteria´s weights.
+            </p>
+          </a>
+
+          <a
+            href="https://lucas-ime.shinyapps.io/merec-wisp/"
+            class="border border-gray-300 rounded p-4 hover:bg-gray-200 hover:shadow"
+          >
+            <span id="merecWispTitle" class="translate text-xl block mb-2"
+              >MEREC-WISP Calculator</span
+            >
+            <p id="merecWispDescription" class="translate">
+              Completly solve a MCDM problem through this hybrid method by
+              providing a decision matrix.
+            </p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-sm text-gray-500">
+      <div id="references">
+        <span id="references-1" class="translate"
+          >This implementation follows the articles</span
+        >
+        <a
+          href="https://www.mdpi.com/2073-8994/13/4/525"
+          target="_blank"
+          class="text-blue-500"
+          >DOI 10.3390/sym13040525</a
+        >
+        <span id="references-2" class="translate">and</span>
+        <a
+          href="https://ieeexplore.ieee.org/document/9432404"
+          target="_blank"
+          class="text-blue-500"
+          >DOI 10.1109/TEM.2021.3075783</a
+        >.
+      </div>
+      <div class="mt-4">
+        <span id="authors" class="translate">AUTHORS</span>
+      </div>
+      <div
+        id="authors__grid"
+        class="grid lg:grid-cols-4 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-2 sm:grid-cols-1 sm:grid-rows-4"
+      >
+        <div class="flex flex-col">
+          <span>Lucas Sebastião de Paula (*)</span>
+          <span>
+            <a
+              href="https://linkedin.com/in/lucas-sebastião-de-paula-44215b23"
+              target="_blank"
+              class="text-blue-500"
+            >
+              LinkedIn
+            </a>
+          </span>
+          <span>
+            <a
+              href="http://lattes.cnpq.br/8833880301944984"
+              target="_blank"
+              class="text-blue-500"
+            >
+              Currículo Lattes
+            </a>
+          </span>
+          <span>
+            <a
+              href="https://www.researchgate.net/profile/Lucas-Sebastiao-De-Paula"
+              target="_blank"
+              class="text-blue-500"
+            >
+              Research Gate
+            </a>
+          </span>
+        </div>
+
+        <div class="flex flex-col">
+          <span>Wallace Andrade da Silva</span>
+          <span>
+            <a
+              href="https://linkedin.com/in/wllc-dev"
+              target="_blank"
+              class="text-blue-500"
+            >
+              LinkedIn
+            </a>
+          </span>
+          <span>
+            <a href="https://wllc.dev" target="_blank" class="text-blue-500">
+              Homepage
+            </a>
+          </span>
+          <span>
+            <a
+              href="https://github.com/andradewall"
+              target="_blank"
+              class="text-blue-500"
+            >
+              GitHub
+            </a>
+          </span>
+        </div>
+
+        <div class="flex flex-col">
+          <span>Bernardo Silva</span>
+          <span>
+            <a
+              href="https://www.linkedin.com/in/silvabernardo/"
+              target="_blank"
+              class="text-blue-500"
+            >
+              LinkedIn
+            </a>
+          </span>
+          <span>
+            <a
+              href="http://lattes.cnpq.br/8111368351010941"
+              target="_blank"
+              class="text-blue-500"
+            >
+              Currículo Lattes
+            </a>
+          </span>
+          <span>
+            <a
+              href="https://www.researchgate.net/profile/Bernardo-Silva-2"
+              target="_blank"
+              class="text-blue-500"
+            >
+              Research Gate
+            </a>
+          </span>
+          <span>
+            <a
+              href="https://github.com/dioubernardo"
+              target="_blank"
+              class="text-blue-500"
+            >
+              GitHub
+            </a>
+          </span>
+        </div>
+
+        <div class="flex flex-col">
+          <span>Marcos dos Santos</span>
+          <span>
+            <a
+              href="https://www.linkedin.com/in/profmarcosdossantos/"
+              target="_blank"
+              class="text-blue-500"
+            >
+              LinkedIn
+            </a>
+          </span>
+          <span>
+            <a
+              href="http://lattes.cnpq.br/5534398558592175"
+              target="_blank"
+              class="text-blue-500"
+            >
+              Currículo Lattes
+            </a>
+          </span>
+          <span>
+            <a
+              href="https://www.researchgate.net/profile/Marcos-Santos-85"
+              target="_blank"
+              class="text-blue-500"
+            >
+              Research Gate
+            </a>
+          </span>
+        </div>
+      </div>
+      <span id="author-legend" class="translate">(*) Corresponding author</span>
+      <span class="block text-blue-500">
+        <a href="mailto:lucas@ime.eb.br">lucas@ime.eb.br</a></span
+      >
+    </footer>
+
+    <script>
+      const texts = {
+        en: {
+          subtitle: 'A Multiple Criteria Decision Making Support Website',
+          description:
+            'This website offers a versatile calculator accommodating the MEREC (MEthod based on the Removal Effects of Criteria) objective weight method and the WISP (Weighted Sum Product Method) ranking method. These tools are designed to address the challenges presented by Multiple Criteria Decision Making problems. Whether you prefer to use each method individually or in combination as a hybrid approach, you can effortlessly leverage the calculator. Simply input your problem data, including alternatives, criteria, Cost-Benefit indicators, and their corresponding values, using the provided CSV examples.',
+          merecTitle: 'MEREC Calculator',
+          merecDescription:
+            'Obtain the MEREC´s objetive weights for a given decision matrix.',
+          wispTitle: 'WISP Calculator',
+          wispDescription:
+            'Solve a MCDM problem using the WISP method by providing a decision matrix and the criteria´s weights.',
+          merecWispTitle: 'MEREC-WISP Calculator',
+          merecWispDescription:
+            'Completly solve a MCDM problem through this hybrid method by providing a decision matrix.',
+          'references-1': 'This implementation follows the articles',
+          'references-2': 'and',
+          authors: 'AUTHORS',
+          'author-legend': '(*) Corresponding author',
+        },
+        'pt-BR': {
+          subtitle:
+            'Um Portal de Suporte à Tomada de Decisão com Múltiplos Critérios',
+          description:
+            'Este site oferece uma calculadora versátil que acomoda o método de ponderação objetiva MEREC (MEthod based on the Removal Effects of Criteria) e o método de ranqueamento WISP (Weighted Sum Product Method). Essas ferramentas são projetadas para abordar os desafios apresentados pelos problemas de tomada de decisão com múltiplos critérios. Se você prefere usar cada método individualmente ou em combinação como uma abordagem híbrida, você pode aproveitar a calculadora sem esforço. Basta inserir os dados do seu problema, incluindo alternativas, critérios, indicadores de custo-benefício e seus valores correspondentes, usando os exemplos de CSV fornecidos.',
+          merecTitle: 'Calculadora MEREC',
+          merecDescription:
+            'Obtenha os pesos objetivos do MEREC para uma matriz de decisão.',
+          wispTitle: 'Calculadora WISP',
+          wispDescription:
+            'Resolva um problema de MCDM usando o método WISP fornecendo uma matriz de decisão e os pesos dos critérios.',
+          merecWispTitle: 'Calculadora MEREC-WISP',
+          merecWispDescription:
+            'Resolva completamente um problema de MCDM através deste método híbrido fornecendo uma matriz de decisão.',
+          'references-1': 'Esta implementação segue os artigos',
+          'references-2': 'e',
+          authors: 'AUTORES',
+          'author-legend': '(*) Autor correspondente',
+        },
+      }
+
+      const languageSelector = document.getElementById('languageSelector')
+
+      languageSelector.addEventListener('change', (event) => {
+        const selectedLanguage = event.target.value
+
+        const elements = document.querySelectorAll('.translate')
+        elements.forEach((element) => {
+          const key = element.id
+          element.innerText = texts[selectedLanguage][key]
+        })
+      })
+    </script>
+  </body>
+</html>
