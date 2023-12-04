@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MEREC-WISP-WEB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Helvetica Neue", Helvetica'],
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="mx-[15px] pt-[20px] space-y-8">
+    <a
+      href="/"
+      class="border border-gray-300 rounded p-2.5 hover:bg-gray-200 hover:shadow"
+      >Back</a
+    >
+
+    <iframe
+      src="https://bernardosilva.shinyapps.io/rwisp/"
+      frameborder="0"
+      width="100%"
+      style="height: 100vh"
+    ></iframe>
+  </body>
+</html>
